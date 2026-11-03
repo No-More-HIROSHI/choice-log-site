@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>サポート - 選んだ時間</title><meta name="description" content="「選んだ時間」（Apple Watch / iPhone アプリ）のサポートページ"><style>
+<title>選んだ時間 - Apple Watch で「その時間、自分で選んだ？」</title>
+<meta name="description" content="Apple Watch の通知に 2 タップで答えて、時間の使い方を裁かずに振り返るアプリ。iPhone で 1 日のマップと 14 日の地図。">
+<style>
 :root{--ink:#16201F;--mute:#5f6b69;--bg:#F4F6F4;--card:#fff;--accent:#157A7A}
 @media(prefers-color-scheme:dark){:root{--ink:#EEF2F1;--mute:#A9B4B1;--bg:#121817;--card:#1C2423;--accent:#58C9C9}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;line-height:1.8}
@@ -14,37 +16,85 @@ article{background:var(--card);border-radius:16px;padding:24px 24px 8px;box-shad
 h2{font-size:22px;margin:0 0 8px}h3{font-size:17px;margin:28px 0 8px;color:var(--accent)}
 p,li{color:var(--ink)}small,.mute{color:var(--mute)}ul,ol{padding-left:22px}
 footer{margin-top:24px;font-size:13px;color:var(--mute)}
+
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;margin:8px 0 28px}
+.hero h2{font-size:30px;line-height:1.3;margin:0 0 10px}
+.hero p{color:var(--mute);margin:0 0 14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--card);border:1px solid rgba(21,122,122,.25);color:var(--accent);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600}
+.hero img{width:100%;max-width:260px;border-radius:40px;display:block;margin:0 auto;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.sec{margin:36px 0 8px}.sec h2{font-size:22px;margin:0 0 6px}.sec p.lead{color:var(--mute);margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.grid figure{margin:0;background:var(--card);border-radius:16px;padding:12px;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.grid img{width:100%;border-radius:12px;display:block}
+.grid.watch img{border-radius:28px}
+.grid figcaption{font-size:13px;line-height:1.5;margin-top:8px}
+.grid figcaption b{display:block;font-size:14px;margin-bottom:2px}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.three div{background:var(--card);border-radius:14px;padding:14px}
+.three b{display:block;color:var(--accent);margin-bottom:4px}
+.steps{background:var(--card);border-radius:16px;padding:16px 20px}
+.steps ol{margin:8px 0 0}.steps li{margin:6px 0}
+.note{font-size:13px;color:var(--mute)}
+@media(max-width:640px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.three{grid-template-columns:1fr}.hero h2{font-size:24px}}
 </style></head>
 <body><main>
 <header><div class="mark"></div><h1>選んだ時間</h1></header>
-<nav><a href="./">サポート</a><a href="./privacy.html">プライバシーポリシー</a></nav>
-<article><h2>サポート</h2>
-<p>Apple Watch の通知に 2 タップで答えて「その時間を自分で選んだか」を記録し、iPhone で 1 日の流れを振り返るアプリです。</p>
-<h3>必要なもの</h3>
-<ul>
-<li>iOS 27 以上の iPhone</li>
-<li>watchOS 27 以上の Apple Watch（iPhone とペアリング済み）</li>
-</ul>
-<h3>使い方の基本</h3>
-<ol>
-<li>iPhone に入れると、Apple Watch にも自動でアプリが入ります（入らない場合は iPhone の「Watch」アプリ →「選んだ時間」→ インストール）。</li>
-<li>Watch でアプリを開き、通知を許可します。</li>
-<li>設定した間隔（初期値は 60 分、7:00〜23:00）で Watch に「直前の時間は？」と通知が届きます。</li>
-<li>通知のボタンか Watch の画面から、「何をしていた？」→「自分で選んだ？（○△×）」の 2 タップで記録します。</li>
-<li>iPhone の「振り返り」で 1 日のマップと時系列を、「パターン」で 14 日の地図と流されやすい時間帯を見ます。</li>
-</ol>
-<h3>よくある質問</h3>
-<p><strong>通知が来ない</strong></p>
-<p>iPhone の「Watch」アプリ →「通知」→「選んだ時間」で通知が許可されているか確認してください。曜日ごとの時間帯は iPhone の「設定」タブで変えられます。「今日は通知をお休み」にしていると、その日は通知が止まります。</p>
-<p><strong>答えられなかった枠はどうなる？</strong></p>
-<p>10 分後にもう一度だけ通知が来ます。それでも答えなかった枠は、iPhone の「未記録」タブや「振り返り」の時系列から、あとから入れられます。</p>
-<p><strong>× に赤を使っていないのはなぜ？</strong></p>
-<p>行動を善悪で裁かない、我慢を強いない、失敗を責めない、という考えで作っているためです。× は「気づけた印」です。</p>
-<p><strong>データはどこに保存される？</strong></p>
-<p>iPhone と Apple Watch の中だけです。外部のサーバーには送られません。詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。</p>
-<h3>連絡先</h3>
-<p>不具合や要望は、App Store のレビュー欄か、下のメールアドレスへお寄せください。</p>
-<p>メール：hiroshimatsunagatah@gmail.com</p>
-</article>
-<footer>© 2026 Hiroshi Matsunaga · iOS 27 / watchOS 27</footer>
+<nav><a href="./">紹介</a><a href="./support.html">サポート</a><a href="./privacy.html">プライバシーポリシー</a></nav>
+
+<section class="hero">
+  <div>
+    <h2>その時間、<br>自分で選んだ？</h2>
+    <p>Apple Watch の通知に 2 タップで答えるだけ。何をしていたか、自分で選んだか。<br>記録を見返すと、流されやすい時間と行動が見えてきます。</p>
+    <div class="chips"><span class="chip">裁かない</span><span class="chip">我慢させない</span><span class="chip">責めない</span></div>
+  </div>
+  <img src="img/iphone-00-welcome.png" alt="はじめの画面：我慢じゃなく、気づきで変わる。">
+</section>
+
+<section class="sec">
+  <h2>記録は手首の上で、2 タップ</h2>
+  <p class="lead">通知が来たら「何をしていた？」→「自分で選んだ？（○△×）」。答えは成績ではなく、気づきの印です。</p>
+  <div class="grid watch">
+    <figure><img src="img/watch-01-home.png" alt="Watch のホーム：今日のマップ"><figcaption><b>今日のマップ</b>ホームの先頭に、今日の ○△× が一本の帯で。</figcaption></figure>
+    <figure><img src="img/watch-02-nagasaresou.png" alt="今、流されそう"><figcaption><b>今、流されそう</b>気づいた瞬間を残し、ひと言と「備え」を見せる。</figcaption></figure>
+    <figure><img src="img/watch-03-hitokoto.png" alt="切り替えのひと言"><figcaption><b>切り替えのひと言</b>× や △ の直後に、責めない短い提案。きっかけ別に 36 通り。</figcaption></figure>
+    <figure><img src="img/watch-04-card.png" alt="スマートスタックのカード"><figcaption><b>スマートスタック</b>問いかけ・備え・今日のまとめが文字盤の下に。</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec">
+  <h2>iPhone で、1 日と 14 日を見渡す</h2>
+  <p class="lead">○ は緑、△ は橙、× は藍。× に赤は使いません。</p>
+  <div class="grid">
+    <figure><img src="img/iphone-01-furikaeri.png" alt="振り返り：選べた時間帯のマップ"><figcaption><b>振り返り</b>1 日を 1 本の横帯に。枡をタップすれば記録を直せます。</figcaption></figure>
+    <figure><img src="img/iphone-02-pattern.png" alt="パターン：14 日の地図"><figcaption><b>14 日の地図</b>縦に色が並ぶ時間帯が、備えを置く候補。</figcaption></figure>
+    <figure><img src="img/iphone-03-sonaeru.png" alt="備える"><figcaption><b>備える</b>「もし〜なら、〜する」を先に決めておく。予告の振動も。</figcaption></figure>
+    <figure><img src="img/iphone-04-settei.png" alt="設定"><figcaption><b>設定</b>間隔は 30・45・60 分。曜日ごとの時間帯、祝日、お休み。</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec">
+  <h2>3 つのやらないこと</h2>
+  <div class="three">
+    <div><b>裁かない</b>決めて遊んだゲームも休憩も「選んだ時間」です。</div>
+    <div><b>我慢させない</b>警告もブロックもしません。</div>
+    <div><b>責めない</b>× が続いた日も、責める言葉は出しません。</div>
+  </div>
+</section>
+
+<section class="sec">
+  <h2>テストに参加する（TestFlight）</h2>
+  <div class="steps">
+    <p>いまは友達向けのテスト版です。iOS 27 以上の iPhone と、watchOS 27 以上の Apple Watch が必要です。</p>
+    <ol>
+      <li>App Store で「TestFlight」アプリを入れる。</li>
+      <li>招待リンク（LINE などでお送りします）を iPhone で開いて「インストール」。</li>
+      <li>Watch アプリは自動で入ります。入らなければ iPhone の「Watch」アプリ →「選んだ時間」→ インストール。</li>
+      <li>Watch でアプリを開き、通知を許可する。</li>
+    </ol>
+    <p class="note">記録は iPhone と Apple Watch の中にだけ保存され、外部には送られません。感想は TestFlight の「フィードバックを送信」から。</p>
+  </div>
+</section>
+
+<footer>© 2026 Hiroshi Matsunaga · <a href="./support.html" style="color:var(--accent)">サポート</a> · <a href="./privacy.html" style="color:var(--accent)">プライバシーポリシー</a></footer>
 </main></body></html>
